@@ -169,8 +169,81 @@
         </div>
       </section>
 
-     //Julie start
-    //Julie Stop
+     <section class="section registration-section" id="register">
+        <div class="registration-copy">
+          <p class="eyebrow">Registration</p>
+          <h2>Reserve your seat</h2>
+          <p>
+            Complete the details below to create a registration. The form includes ticket pricing,
+            quantity updates, and a friendly success state for attendees.
+          </p>
+      
+        </div>
+
+        <form class="registration-form" id="registration-form" action="register.php" method="POST">
+          <div class="form-row two">
+            <label>
+              Full name
+              <input name="name" type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              Email address
+              <input name="email" type="email" placeholder="you@example.com" required />
+            </label>
+          </div>
+          <div class="form-row two">
+            <label>
+              Phone number
+              <input name="phone" type="tel" placeholder="+256758631194" required />
+            </label>
+            <label>
+              Organization
+              <input name="company" type="text" placeholder="Company or school" />
+            </label>
+          </div>
+          <div class="form-row two">
+            <label>
+              Ticket type
+              <select name="ticket" id="ticket-select">
+                <option value="200000">Standard - UGX 200,000</option>
+                <option value="300000" selected>Professional - UGX 300,000</option>
+                <option value="1000000">VIP - UGX 1,000,000</option>
+              </select>
+            </label>
+            <label>
+              Quantity
+              <input name="quantity" id="ticket-quantity" type="number" min="1" max="10" value="1" />
+            </label>
+          </div>
+          <label>
+            Preferred session
+            <select name="session">
+              <option>Product innovation</option>
+              <option>Founder leadership</option>
+              <option>Marketing growth</option>
+              <option>Operations and systems</option>
+            </select>
+          </label>
+          <label class="checkbox-line">
+            <input type="checkbox" required />
+            <span>I agree to receive event updates and registration details.</span>
+          </label>
+          <div class="form-footer">
+            <div>
+              <span>Total</span>
+              <strong id="ticket-total">UGX 100,000</strong>
+            </div>
+            <button class="button primary" type="submit">Register Now</button>
+          </div>
+          <p class="form-message" id="form-message" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>EventFlow Registration</span>
+      <span>Designed by Group1 for responsive event booking experiences.</span>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
