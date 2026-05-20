@@ -1,14 +1,3 @@
-<?php
-
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "eventflow";
-
-$conn = new mysqli($host, $user, $password, $database);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-?>
+//
+Pretty add code here but remove comment
+//
