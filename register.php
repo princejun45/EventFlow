@@ -1,2 +1,8 @@
-//Liilian PUT HERE
-//Dont forget to remove the comment
+
+<?php
+
+//Add code here
+
+$conn->close();
+
+?>
