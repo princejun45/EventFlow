@@ -1,3 +1,5 @@
-//
-Pretty add code here but remove comment
-//
+
+<?php
+
+//Pretty add code here and remove this comment
+?>
